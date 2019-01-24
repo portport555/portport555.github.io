@@ -36,7 +36,9 @@
    text-shadow: 3px 3px 3px blue;
    font-family: Lora,'Times New Roman',serif;
   }
- 
+  li{
+   position: relative;
+  }
   li:nth-of-type(1){
   background: url(./shot1.png);
   background-size: 110% 102%;
@@ -53,7 +55,12 @@
   background: url(./shot4.png);
   background-size: 110% 102%;
   }
-
+  ul li a{
+   position: absolute;
+   top: 0;
+   left: 0;
+  
+  }
   @media screen and (max-width: 959px) {
   li{
    list-style: none;
@@ -67,6 +74,9 @@
    height: 200px;
    border-radius: 100px;
    box-shadow: 3px 3px 3px #fff;
+  }
+  li a{
+   padding: 100px;
   }
   .content{
   width: 90%;
@@ -116,6 +126,9 @@
    height: 300px;
    border-radius: 150px;
    box-shadow: 3px 3px 3px #fff;
+   }
+   li a{
+    padding: 150px;
    }
   li:hover {
   padding-left: 5px;
